@@ -1,5 +1,5 @@
 theme = "docuapi"
-themesdir = "../.."
+themesDir = "themes"
 languageCode = "en-us"
 baseurl = "https://docuapi.netlify.com/"
 title = "DocuAPI Example Site"
