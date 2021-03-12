@@ -5,32 +5,36 @@ title: API Reference
 
 # Introduction
 
-Welcome to the Cobalt.io API. You can use our API to access information on orgs, assets, pentests, findings and events from our database.
-
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
-
-<!---
-**This example API documentation page was created with [DocuAPI](https://github.com/bep/docuapi/), a multilingual documentation theme for the static site generator [Hugo](http://gohugo.io/).** 
--->
+Welcome to the [Cobalt.io](https://cobalt.io) public API docs portal. You can use our REST API to access information on orgs, assets, pentests, findings and events from our database. Our API is currently read-only.
 
 # Authentication
 
-> To authorize, use this code:
+> To authorize, give this a try:
 
 ```shell
-# With shell, you can just pass the correct header with each request
-curl "https://api.cobalt.io"
+curl - X GET "https://api.cobalt.io"
   -H "Authorization: Bearer your-personal-API-token-here"
 ```
 
 > Make sure to replace `your-personal-API-token-here` with your API token.
 
-Cobalt uses API tokens to allow access to the API. You can create a new Cobalt API token from within your [Cobalt Profile](https://app.cobalt.io/settings/api-token).
+Cobalt uses API tokens to allow access to the API. You can create a new Cobalt API token from within your [Cobalt profile](https://app.cobalt.io/settings/api-token).
 
-Cobalt expects for the API token to be included in all API requests to the server in a header that looks like the following:
+Cobalt expects the API token to be included in all API requests to the server in a header that looks like the following:
 
 `Authorization: Bearer your-personal-API-token-here`
 
 <aside class="notice">
-You must replace <code>your-personal-API-token-here</code> with your personal API token. Make sure _not_ to remove the word Bearer.
+You must replace <code>your-personal-API-token-here</code> with your personal API token. DO NOT remove the word Bearer.
 </aside>
+
+Our Living Documentation and API Explorer are located in [Swagger](https://app.swaggerhub.com/apis/CobaltLab/Cobalt_Public_API/1.3.0) and built with the [OpenAPI specification](https://swagger.io/specification/). 
+ - With your token copied locally (once you leave the profile page you won't be able to copy it), head to Swagger
+ - Make sure to point to Production (i.e. https://api.cobalt.io) from the drop-down 
+ - Authorize with your API token
+ - From there, you'll want to execute the `/orgs` endpoint (Try it out => Execute)
+ - Note the organization `token` 
+ - Return back to the Authorize section and add the this org `token` and Authorize that as part of your OrgToken (i.e. `X-Org-Token`) header
+ - Now, all subsequent requests to `/assets`, `/findings`, `/pentests`, etc will be scoped to your personal API token and the org selected
+
+

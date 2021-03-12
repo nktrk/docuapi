@@ -1,46 +1,16 @@
 ---
-weight: 12
-title: Get a Specific Kitten
+weight: 14
+title: Get Specific Findings
 ---
 
-## Get a Specific Kitten
-
-```go
-package main
-
-import "github.com/bep/kittn/auth"
-
-func main() {
-	api := auth.Authorize("meowmeowmeow")
-
-	_ = api.GetKitten(2)
-}
-```
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
+## Get Specific Findings
 
 ```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
+curl -X GET "https://api.cobalt.io/findings?" 
+  -H "accept: application/vnd.cobalt.v1+json" 
+  -H "Authorization: Bearer your-personal-api-token-here" 
+  -H "X-Org-Token: your-org-token-here"
 
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
 ```
 
 > The above command returns JSON structured like this:

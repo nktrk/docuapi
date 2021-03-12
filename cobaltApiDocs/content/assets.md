@@ -8,7 +8,10 @@ title: Assets
 ## Get All Assets
 
 ```shell
-curl -X GET "https://api.cobalt.io/assets" -H "accept: application/vnd.cobalt.v1+json" -H  "Authorization: Bearer your-personal-api-token-here" -H "X-Org-Token: your-org-token-here"
+curl -X GET "https://api.cobalt.io/assets" 
+  -H "accept: application/vnd.cobalt.v1+json" 
+  -H "Authorization: Bearer your-personal-api-token-here" 
+  -H "X-Org-Token: your-org-token-here"
 ```
 
 > The above command returns JSON structured like this:

@@ -8,7 +8,9 @@ title: Orgs
 ## Get All Orgs
 
 ```shell
-curl -X GET "https://api.cobalt.io/orgs" -H "accept: application/vnd.cobalt.v1+json" -H  "Authorization: Bearer your-personal-api-token-here"
+curl -X GET "https://api.cobalt.io/orgs" 
+  -H "accept: application/vnd.cobalt.v1+json" 
+  -H  "Authorization: Bearer your-personal-api-token-here"
 ```
 
 > The above command returns JSON structured like this:

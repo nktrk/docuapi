@@ -8,7 +8,10 @@ title: Findings
 ## Get All Findings
 
 ```shell
-curl -X GET "https://api.cobalt.io/findings" -H "accept: application/vnd.cobalt.v1+json" -H "Authorization: Bearer your-personal-api-token-here" -H  "X-Org-Token: your-org-token-here"
+curl -X GET "https://api.cobalt.io/findings" 
+  -H "accept: application/vnd.cobalt.v1+json" 
+  -H "Authorization: Bearer your-personal-api-token-here" 
+  -H "X-Org-Token: your-org-token-here"
 
 ```
 
@@ -50,7 +53,7 @@ This endpoint retrieves a list of all pentest findings that belong to the org sp
 `GET https://api.cobalt.io/pentests`
 
 
-### Query Parameters
+### URL Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
