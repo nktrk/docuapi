@@ -10,10 +10,40 @@ curl -X GET "https://api.cobalt.io/findings?pentest=pt_9Ig"
   -H "accept: application/vnd.cobalt.v1+json" 
   -H "Authorization: Bearer your-personal-api-token-here" 
   -H "X-Org-Token: your-org-token-here"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "data": [
+    {
+      "resource": {
+        "id": "vu_2wXY3bq",
+        "tag": "#PT3334_37",
+        "title": "SQL Injection",
+        "description": "A SQL injection attack...",
+        "type_category": null,
+        "labels": [],
+        "impact": 4,
+        "likelihood": 4,
+        "severity": high,
+        "affected_targets": [ ""],
+        "proof_of_concept": null,
+        "suggested_fix": "Ensure this...",
+        "pentest_id": "pt_9Ig",
+        "asset_id": "as_cwrsqsL",
+        "log": [],
+        "state": "need_fix"
+      }
+    }
+ ]
+}
 
 ```
 
-You can filter for findings scoped to a pentest or to an asset.
+
+You can filter for findings scoped to a specific pentest or asset.
 
 ### HTTP Requests
 

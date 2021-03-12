@@ -47,18 +47,37 @@ curl -X GET "https://api.cobalt.io/findings"
 
 This endpoint retrieves a list of all pentest findings that belong to the org specified in the header, filterable by pentest id or asset id.
 
+### Severity = High / Medium / Low
+
+*Cobalt Risk Inputs*
+Risk = Impact * Likelihood
+impact := [0-4]
+likelihood := [0-4]
+
+*Cobalt Risk Classification*
+`severity` :=
+*high* = Risk @ 16
+*medium* = Risk @ 5-15
+*low* = Risk @ 1-4
+
 
 ### HTTP Request
 
 `GET https://api.cobalt.io/findings`
 
-
-### URL Parameters
+### Query Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
-pentest | n/a | If specified, returns findings scoped to this pentest id, e.g. https://api.cobalt.io/findings?pentest=pt_9Ig
-asset | n/a | If specified, returns findings scoped to this asset id, e.g. https://api.cobalt.io/findings?asset=as_cwrsqsL
+limit | 100 | If set, you can adjust the limit returned, e.g. https://api.cobalt.io/findings?limit=1000
+
+### Fields
+
+Field           | Enum Types
+--------------- | -----------
+`severity`      | null, low, medium, high
+`state`         | need_fix, wont_fix, valid_fix, check_fix, new, invalid, carried_over
+`type_category` | null, XSS, ... (about 30 more via the Cobalt Taxonomy)
 
 
 <aside class="success">

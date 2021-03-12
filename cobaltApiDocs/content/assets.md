@@ -26,7 +26,7 @@ curl -X GET "https://api.cobalt.io/assets"
         "description": "Test text",
         "asset_type": "external_network",
         "attachments": []
-    }
+      }
     }
  ]
 }
@@ -43,7 +43,7 @@ This endpoint retrieves a list of assets that belong to the org specified in the
 
 Parameter | Default | Description
 --------- | ------- | -----------
-limit | 100 | If set, you can increase the limit returned, e.g. https://api.cobalt.io/assets?limit=1000
+limit | 100 | If set, you can adjust the limit returned, e.g. https://api.cobalt.io/assets?limit=1000
 
 <aside class="success">
 Remember — you can only request Assets scoped to the Org specified in the header.

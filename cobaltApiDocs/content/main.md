@@ -12,13 +12,13 @@ Welcome to the [Cobalt.io](https://cobalt.io) public API docs portal. You can us
 > To authorize, give this a try:
 
 ```shell
-curl - X GET "https://api.cobalt.io"
+curl - X GET "https://api.cobalt.io/orgs"
   -H "Authorization: Bearer your-personal-API-token-here"
 ```
 
-> Make sure to replace `your-personal-API-token-here` with your API token.
+> Make sure to replace `your-personal-API-token-here` with your actual API token.
 
-Cobalt uses API tokens to allow access to the API. You can create a new Cobalt API token from within your [Cobalt profile](https://app.cobalt.io/settings/api-token).
+Cobalt uses API tokens to allow access to various endpoints. You can create a new Cobalt API token from within your [Cobalt profile](https://app.cobalt.io/settings/api-token).
 
 Cobalt expects the API token to be included in all API requests to the server in a header that looks like the following:
 
