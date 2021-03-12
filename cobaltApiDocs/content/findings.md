@@ -49,16 +49,16 @@ This endpoint retrieves a list of all pentest findings that belong to the org sp
 
 ### Calculations
 
-*Cobalt Risk Inputs*
+*Cobalt Risk Input Fields*
  - Risk = Impact * Likelihood
- - impact := [0-4]
- - likelihood := [0-4]
+ - `impact` := [0-4]
+ - `likelihood` := [0-4]
 
 *Cobalt Risk Classification*
  - `severity` :=
- - *high* = Risk @ 16
- - *medium* = Risk @ 5-15
- - *low* = Risk @ 1-4
+ - **high** = Risk @ 16
+ - **medium** = Risk @ 5-15
+ - **low** = Risk @ 1-4
 
 
 ### HTTP Request
