@@ -1,14 +1,27 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/49111249-0a1a-4b5a-a3ab-45d00732fdb3/deploy-status)](https://app.netlify.com/sites/docuapi/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b42b3f4e-140b-472d-becf-a0ce06e197d5/deploy-status)](https://app.netlify.com/sites/cobalt-api/deploys)
 
-**DocuAPI** is a beautiful multilingual API documentation theme for [Hugo](http://gohugo.io/). This theme is built on top of the beautiful work of [Robert Lord](https://github.com/lord) and others on the [Slate](https://github.com/slatedocs/slate) project ([Apache 2 License](https://github.com/slatedocs/slate/blob/master/LICENSE)).
-
-<br/>
-
-> Visit the [demo site](https://docuapi.netlify.com/).
+**DocuAPI** is a multilingual API documentation theme for [Hugo](http://gohugo.io/). This theme is built on top of the beautiful work of [Robert Lord](https://github.com/lord) and others on the [Slate](https://github.com/slatedocs/slate) project ([Apache 2 License](https://github.com/slatedocs/slate/blob/master/LICENSE)) and is maintaiened [here](https://github.com/bep/docuapi).
 
 <br/>
 
-![Screenshot DocuAPI Example site](https://raw.githubusercontent.com/bep/docuapi/master/images/screenshot.png)
+## Local Development
+
+Install Go + Hugo with Homebrew
+
+```
+brew install go
+brew install hugo
+```
+
+From any site directory (e.g. `exampleSite`), you can test and deploy changes with
+
+```
+hugo serve
+```
+
+## Hosting
+
+**TODO**
 
 ## Use
 

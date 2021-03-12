@@ -15,7 +15,7 @@ curl -X GET "https://api.cobalt.io/findings?pentest=pt_9Ig"
 
 You can filter for findings scoped to a pentest or to an asset.
 
-### HTTP Request
+### HTTP Requests
 
 `GET https://api.cobalt.io/findings?pentest=pt_9Ig`
 

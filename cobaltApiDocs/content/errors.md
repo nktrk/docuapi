@@ -6,7 +6,7 @@ title: Errors
 
 # Errors
 
-<aside class="notice">This error section helps you identify the type of error you're running into. If you think you're experiencing a bug, or seeing incorrect data please reach out: integrations@cobalt.io</aside>
+<aside class="warning">This error section helps you identify the type of error you're running into. If you think you're experiencing a bug, or seeing incorrect data please reach out: integrations@cobalt.io</aside>
 
 The Cobalt API uses the following error codes:
 
