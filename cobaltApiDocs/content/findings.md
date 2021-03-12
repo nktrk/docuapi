@@ -50,7 +50,7 @@ This endpoint retrieves a list of all pentest findings that belong to the org sp
 
 ### HTTP Request
 
-`GET https://api.cobalt.io/pentests`
+`GET https://api.cobalt.io/findings`
 
 
 ### URL Parameters

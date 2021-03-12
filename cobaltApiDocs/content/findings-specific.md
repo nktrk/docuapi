@@ -18,6 +18,7 @@ You can filter for findings scoped to a pentest or to an asset.
 ### HTTP Request
 
 `GET https://api.cobalt.io/findings?pentest=pt_9Ig`
+
 `GET https://api.cobalt.io/findings?asset=as_cwrsqsL`
 
 ### URL Parameters

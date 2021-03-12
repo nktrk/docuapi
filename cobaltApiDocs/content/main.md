@@ -34,7 +34,7 @@ Our Living Documentation and API Explorer are located in [Swagger](https://app.s
  - Authorize with your API token
  - From there, you'll want to execute the `/orgs` endpoint (Try it out => Execute)
  - Note the organization `token` 
- - Return back to the Authorize section and add the this org `token` and Authorize that as part of your OrgToken (i.e. `X-Org-Token`) header
+ - Return back to the Authorize section and add the org `token` and Authorize that as part of your OrgToken (i.e. `X-Org-Token`) header
  - Now, all subsequent requests to `/assets`, `/findings`, `/pentests`, etc will be scoped to your personal API token and the org selected
 
 
