@@ -47,25 +47,25 @@ curl -X GET "https://api.cobalt.io/findings"
 
 This endpoint retrieves a list of all pentest findings that belong to the org specified in the header, filterable by pentest id or asset id.
 
-### Severity = High / Medium / Low
+### Calculations
 
 *Cobalt Risk Inputs*
-Risk = Impact * Likelihood
-impact := [0-4]
-likelihood := [0-4]
+ - Risk = Impact * Likelihood
+ - impact := [0-4]
+ - likelihood := [0-4]
 
 *Cobalt Risk Classification*
-`severity` :=
-*high* = Risk @ 16
-*medium* = Risk @ 5-15
-*low* = Risk @ 1-4
+ - `severity` :=
+ - *high* = Risk @ 16
+ - *medium* = Risk @ 5-15
+ - *low* = Risk @ 1-4
 
 
 ### HTTP Request
 
 `GET https://api.cobalt.io/findings`
 
-### Query Parameters
+### URL Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------

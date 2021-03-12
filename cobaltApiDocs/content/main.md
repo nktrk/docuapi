@@ -25,7 +25,8 @@ Cobalt expects the API token to be included in all API requests to the server in
 `Authorization: Bearer your-personal-API-token-here`
 
 <aside class="notice">
-You must replace <code>your-personal-API-token-here</code> with your personal API token. DO NOT remove the word Bearer.
+You must replace <code>your-personal-API-token-here</code> with your personal API token.<br>
+DO NOT remove the word Bearer.
 </aside>
 
 Our Living Documentation and API Explorer are located in [Swagger](https://app.swaggerhub.com/apis/CobaltLab/Cobalt_Public_API/1.3.0) and built with the [OpenAPI specification](https://swagger.io/specification/). 

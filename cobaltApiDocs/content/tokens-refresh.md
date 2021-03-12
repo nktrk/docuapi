@@ -3,7 +3,7 @@ weight: 16
 title: Refresh Token
 ---
 
-## Refresh Specific Findings
+## Refresh Token
 
 ```shell
 curl -X PUT "https://api.cobalt.io/tokens/token-id-here/refresh" 
@@ -32,12 +32,5 @@ You can request a new token with a PUT request to the token refresh endpoint, re
 
 ### HTTP Request
 
-`PUT https://api.cobalt.io/tokens/:token-id-here/refresh`
-
-### URL Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-pentest | n/a | If specified, returns findings scoped to this pentest id, e.g. https://api.cobalt.io/findings?pentest=pt_9Ig
-asset | n/a | If specified, returns findings scoped to this asset id, e.g. https://api.cobalt.io/findings?asset=as_cwrsqsL
+`PUT https://api.cobalt.io/tokens/token-id-here/refresh`
 

@@ -39,7 +39,7 @@ This endpoint retrieves a list of assets that belong to the org specified in the
 
 `GET https://api.cobalt.io/assets`
 
-### Query Parameters
+### URL Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------

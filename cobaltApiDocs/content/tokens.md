@@ -35,7 +35,7 @@ This endpoint retrieves a list of all tokens that belong to you.
 
 `GET https://api.cobalt.io/tokens`
 
-### Query Parameters
+### URL Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
